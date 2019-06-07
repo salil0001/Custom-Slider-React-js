@@ -1,0 +1,138 @@
+.Upper-Main {
+  overflow: hidden;
+}
+.Upper-heading-inner {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #f5f5f5;
+}
+.Main-Slider {
+  width: 100%;
+  height: 72vh;
+  background: #f5f5f5;
+  overflow: hidden;
+}
+.Crousel-Container {
+  display: flex;
+    position: relative;
+    width: 100%;
+    height: 72vh;
+    overflow: hidden;
+}
+
+.leftSide {
+  top: 0%;
+    left: 0%;
+    background: #f5f5f5;
+    width: 10%;
+    height: 72vh;
+    z-index: 10;
+}
+.middleSide {
+  position: relative;
+    top: 0%;
+    left: 0%;
+    background: #f5f5f5;
+    width: 80%;
+    height: 72vh;
+    
+}
+.innermiddleSide {
+  position: absolute;
+    height: 72vh;
+    left: 0%;
+    width: 80vw;
+    transition: all 800ms ease;
+}
+
+.innermiddleSideLeft {
+  position: absolute;
+  height: 72vh;
+  left:100%;
+  transition: all 800ms ease;
+}
+.innermiddleSideRight {
+  position: absolute;
+  height: 72vh;
+  left:-100%;
+  transition: all 800ms ease;
+}
+.imagesRoot {
+  border-radius: 4px;
+  border: 1px solid #dcdcdc;
+  filter: brightness(0.8);
+}
+
+.rightSide {
+  position: relative;
+  top: 0%;
+  right: 0%;
+  background: #f5f5f5;
+  width: 10%;
+  height: 72vh;
+  z-index: 10;
+}
+.leftSide .leftSideButton {
+  position: absolute;
+  top: 50%;
+  left:8%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+  color: #9e9e9e;
+}
+.leftSide .leftSideButton:hover {
+  
+  color: black;
+}
+.rightSide .rightSideButton {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+  color: #9e9e9e;
+}
+
+.rightSide .rightSideButton:hover {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+  color: black;
+}
+.grid-container
+{
+  display: grid;
+grid-template-columns: auto auto auto auto;
+grid-gap: 18px;
+background-color: aqua;
+padding: 10px 10px;
+}
+.grid-container-inside {
+ 
+  text-align: center;
+  font-size: 15px;
+  height: 32vh;
+  width: 18vw;
+}
+.Coloums-Configure
+{
+  position: relative;
+}
+.Coloums-Configure-Image
+{
+  height: 33vh;
+  width: 18vw;
+}
+.Coloums-Configure-Text
+{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
