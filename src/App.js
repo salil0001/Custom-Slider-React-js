@@ -97,16 +97,6 @@ export default class App extends React.Component {
       return (
         <div className="grid-container-inside">
           <div className="Coloums-Configure">
-            <div className="Coloums-Configure-Image">
-              <img
-                src={Item.ImagesLink}
-                className=""
-                height="100%"
-                width="100%"
-                alt="images"
-              />
-            </div>
-            <div className="Coloums-Configure-Text">{Item.ImageName}</div>
           </div>
         </div>
       );
@@ -116,16 +106,7 @@ export default class App extends React.Component {
       return (
         <div className="grid-container-inside">
           <div className="Coloums-Configure">
-            <div className="Coloums-Configure-Image">
-              <img
-                
-                src={Item.ImagesLink}
-                height="100%"
-                width="100%"
-                alt="images"
-              />
-            </div>
-            <div className="Coloums-Configure-Text">{Item.ImageName}</div>
+           
           </div>
         </div>
       );
