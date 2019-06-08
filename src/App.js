@@ -1,8 +1,8 @@
-import "./App.css";
+import "./APP.scss";
 
-import React from "react";
+import React, { Component } from "react";
 
-export default class App extends React.Component {
+export default class App extends Component {
   state = {
     Items: [
       {
@@ -12,32 +12,32 @@ export default class App extends React.Component {
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/c1cklkyp6ms02tougufx.webp",
         ImageName: "Singpore"
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jv8g79dw3j5fmi9qozoa.webp",
         ImageName: "Amritsar"
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/hlx7brfs0u9k2unjhmr0.webp",
         ImageName: "Bangalore"
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/br3mng95h81qi71dqpvk.webp",
         ImageName: "Chennai"
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/xvp6saafvo0aeykw3di0.webp",
         ImageName: "Poducherry"
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/vplgtbmehzxlzvdbnpby.webp",
         ImageName: "Bidar"
       },
       {
@@ -47,7 +47,7 @@ export default class App extends React.Component {
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/zrvzvz42wh91resimuyz.webp",
         ImageName: "Paris"
       },
       {
@@ -57,12 +57,12 @@ export default class App extends React.Component {
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/e8fnw35p6zgusq218foj.webp",
         ImageName: "Japan"
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/wbulbfghbwsuvelgvibn.webp",
         ImageName: "Maharastra"
       },
       {
@@ -77,7 +77,7 @@ export default class App extends React.Component {
       },
       {
         ImagesLink:
-          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/jrfyzvgzvhs1iylduuhj.jpg",
+          "https://res.klook.com/image/upload/fl_lossy.progressive,q_65/c_fill,w_480,h_384/cities/liw377az16sxmp9a6ylg.webp",
         ImageName: "Las Vegas"
       }
     ],
@@ -121,8 +121,8 @@ export default class App extends React.Component {
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               filter: "brightness(80%)",
-              height: "100%",
-              width: "100%"
+              height: "30vh",
+              width: "18vw"
             }}
           />
 
@@ -132,6 +132,11 @@ export default class App extends React.Component {
     });
 
     return (
+      <div className="CustomSliderComponent"> 
+        <div className="Headings">
+          <div><h3>TOP DESTINATIONS</h3></div>
+          <div>Discover tours, attractions and activities for your next adventure</div>
+        </div>
       <div className="Main-Slider">
         <div className="Crousel-Container">
           <div className="leftSide">
@@ -173,6 +178,7 @@ export default class App extends React.Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }

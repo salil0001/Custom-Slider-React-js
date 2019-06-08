@@ -1,0 +1,131 @@
+.CustomSliderComponent {
+  overflow: hidden;
+
+  .Headings {
+    text-align: center;
+    padding: 1em 0 0 0;
+    background: #f5f5f5;
+  }
+
+  .Main-Slider {
+    width: 100%;
+    height: 68vh;
+    background: #f5f5f5;
+    overflow: hidden;
+
+    .Crousel-Container {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 68vh;
+      overflow: hidden;
+
+      .leftSide {
+        top: 0%;
+        left: 0%;
+        background: #f5f5f5;
+        width: 10%;
+        height: 68vh;
+        z-index: 10;
+
+        .leftSideButton {
+          position: absolute;
+          top: 50%;
+          left: 9%;
+          transform: translate(-50%, -50%);
+          z-index: 10;
+          cursor: pointer;
+          color: #9e9e9e;
+        }
+
+        .leftSideButton:hover {
+          color: black;
+        }
+      }
+      .middleSide {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        background: #f5f5f5;
+        width: 80%;
+        height: 68vh;
+
+        .innermiddleSide {
+          position: absolute;
+          height: 68vh;
+          left: 0%;
+          width: 80vw;
+
+          transition: all 500ms ease-in-out;
+        }
+        .innermiddleSideRight {
+          position: absolute;
+          height: 68vh;
+          left: -100%;
+          width: 80vw;
+
+          transition: all 500ms ease-in-out;
+        }
+        .innermiddleSideLeft {
+          position: absolute;
+          height: 68vh;
+          left: 100%;
+          width: 80vw;
+
+          transition: all 500ms ease-in-out;
+        }
+        .grid-container {
+          display: grid;
+          grid-template-columns: auto auto auto auto;
+
+          background-color: #f5f5f5;
+          height: 72vh;
+          justify-content: space-evenly;
+          padding: 22px;
+        }
+        .grid-container-inside {
+          border: 1px solid #dcdcdc;
+          height: 30vh;
+          width: 18vw;
+          position: relative;
+          transition: all 300ms ease;
+          border-radius: 4px;
+        }
+        .grid-container-inside:hover {
+          margin-top: -8px;
+          transition: all 300ms ease;
+        }
+        .CountryImage {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+          font-size: 24px;
+        }
+      }
+      .rightSide {
+        position: relative;
+        top: 0%;
+        right: 0%;
+        background: #f5f5f5;
+        width: 10%;
+        height: 68vh;
+        z-index: 10;
+
+        .rightSideButton {
+          position: absolute;
+          top: 50%;
+          left: 9%;
+          transform: translate(-50%, -50%);
+          z-index: 10;
+          cursor: pointer;
+          color: #9e9e9e;
+        }
+        .rightSideButton:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}
